@@ -12,7 +12,7 @@
         {
             "id": 2,
             "name": "Samsung m35",
-            "color": "white",
+            "color": "blue",
             "price": "20000",
             "category": "Mobile",
             "brand": "Samsung",
@@ -30,8 +30,44 @@
         {
             "id": 4,
             "name": "Samsung m45",
-            "color": "white",
+            "color": "black",
             "price": "25000",
+            "category": "Mobile",
+            "brand": "Samsung",
+            "Photo": "https://www.bigcmobiles.com/media/catalog/product/cache/e19e56cdd4cf1b4ec073d4305f5db95a/s/a/samsung_galaxy_a35_5g_awesome_iceblue__3.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Samsung A56",
+            "color": "red",
+            "price": "28500",
+            "category": "Mobile",
+            "brand": "Samsung",
+            "Photo": "https://www.bigcmobiles.com/media/catalog/product/cache/e19e56cdd4cf1b4ec073d4305f5db95a/s/a/samsung_galaxy_a35_5g_awesome_iceblue__3.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Samsung A26",
+            "color": "red",
+            "price": "21000",
+            "category": "Mobile",
+            "brand": "Samsung",
+            "Photo": "https://www.bigcmobiles.com/media/catalog/product/cache/e19e56cdd4cf1b4ec073d4305f5db95a/s/a/samsung_galaxy_a35_5g_awesome_iceblue__3.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Samsung A36",
+            "color": "blue",
+            "price": "19000",
+            "category": "Mobile",
+            "brand": "Samsung",
+            "Photo": "https://www.bigcmobiles.com/media/catalog/product/cache/e19e56cdd4cf1b4ec073d4305f5db95a/s/a/samsung_galaxy_a35_5g_awesome_iceblue__3.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Samsung P45",
+            "color": "white",
+            "price": "85000",
             "category": "Mobile",
             "brand": "Samsung",
             "Photo": "https://www.bigcmobiles.com/media/catalog/product/cache/e19e56cdd4cf1b4ec073d4305f5db95a/s/a/samsung_galaxy_a35_5g_awesome_iceblue__3.jpg"

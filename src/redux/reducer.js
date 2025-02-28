@@ -7,19 +7,15 @@ export const cartData = (data = [], action) => {
         case ADD_TO_CART:
             console.warn("ADD_TO_CART condition ", action)
             return [action.data, ...data]
-
-
-        case REMOVE_FROM_CART:
-            console.warn("REMOVE_FROM_CART condition ", action);
-            const index = data.findIndex((item) => item.name === action.data); 
-            if (index >= 0) {
-                return [...data.slice(0, index), ...data.slice(index + 1)]; 
-            }
-            return data;
-
-        case EMPTY_CART:
-            console.warn("EMPTY CART condition ", action);
-            return [];
+            case REMOVE_FROM_CART:
+                console.warn("REMOVE_FROM_CART condition ", action);
+                // data.length= data.length? data.length-1:[]
+                const remainingItems= data.filter((item)=>item.id!==action.data)
+                return [...remainingItems]
+                case EMPTY_CART:
+                    console.warn("EMPTY CART condition ", action);
+                    data =[]
+                    return [...data]
         default:
             return data
     }
