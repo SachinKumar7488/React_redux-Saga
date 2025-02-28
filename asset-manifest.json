@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React_redux-Saga/static/css/main.d02da1bc.css",
+    "main.js": "/React_redux-Saga/static/js/main.60245ad1.js",
+    "static/js/488.d15a1b08.chunk.js": "/React_redux-Saga/static/js/488.d15a1b08.chunk.js",
+    "index.html": "/React_redux-Saga/index.html",
+    "main.d02da1bc.css.map": "/React_redux-Saga/static/css/main.d02da1bc.css.map",
+    "main.60245ad1.js.map": "/React_redux-Saga/static/js/main.60245ad1.js.map",
+    "488.d15a1b08.chunk.js.map": "/React_redux-Saga/static/js/488.d15a1b08.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d02da1bc.css",
+    "static/js/main.60245ad1.js"
+  ]
+}
