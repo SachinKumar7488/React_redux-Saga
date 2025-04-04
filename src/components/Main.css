@@ -1,0 +1,174 @@
+/* Modern CSS with Glassmorphism and Animations */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --primary: #2563eb;
+  --secondary: #7c3aed;
+  --glass: rgba(255, 255, 255, 0.1);
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+  background: linear-gradient(45deg, #f3f4f6, #e5e7eb);
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 1rem 2rem;
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.product-card {
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow);
+}
+
+.card-overlay {
+  position: relative;
+  overflow: hidden;
+  height: 250px; /* Fixed height for image container */
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Add padding to prevent overflow */
+}
+
+.product-image {
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  max-height: 100%; /* Ensure image doesn't exceed container height */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Fit the entire image within the container */
+  transition: transform 0.3s ease;
+}
+
+.quick-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .quick-actions {
+  opacity: 1;
+}
+
+.action-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.action-btn:hover {
+  background: var(--secondary);
+}
+
+.product-info {
+  padding: 1.5rem;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.product-brand {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.cart-btn {
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cart-btn:hover {
+  transform: scale(1.05);
+}
+
+.empty-cart-btn {
+  background: #dc2626;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.empty-cart-btn:hover {
+  background: #b91c1c;
+}
+
+.icon {
+  font-size: 1rem;
+}

@@ -17,11 +17,20 @@ function* searchProducts(action) {
         let response = yield call(fetch, `http://localhost:3500/product?color=${action.query}`);
         let data = yield response.json();
         console.warn("Fetched searched products:", data);
-        yield put({ type: SET_PRODUCT_LIST, data }); // Use correct data variable
+        yield put({ type: SET_PRODUCT_LIST, data });
     } catch (error) {
         console.error("Error searching products:", error);
     }
 }
+// browse* browseProducts(data){
+//     try{
+//         let response = yield call(fetch,)
+//         let data = yield response.json();
+//         console.warn("product found", data);
+//         yield put({type:})
+
+//     }
+// }
 
 function* productSaga() {
     yield takeEvery(PRODUCT_LIST, getProducts);
