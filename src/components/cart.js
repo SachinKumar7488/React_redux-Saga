@@ -30,7 +30,7 @@ console.warn(amount)
             <div className="price-details">
                 <div className="adjust-price"><span>Amount</span><span>{amount}</span></div>
                 <div className="adjust-price"><span>Discount</span><span>{amount/10}</span></div>
-                <div className="adjust-price"><span>Tax</span><span>000</span></div>
+                <div className="adjust-price"><span>Tax/Gst</span><span>000</span></div>
                 <div className="adjust-price"><span>Total</span><span>{amount-(amount/10)}</span></div>
 
             </div>
